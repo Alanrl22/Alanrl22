@@ -1,0 +1,18 @@
+VARIABLES
+  prix est un reel 
+  argent est un reel 
+  maxbonbons=0
+
+DEBUT nbmaxbonbons (reel argent, reel prix)
+  DEBUT SI argent > 0 ET SI prix > 0)
+    TANT QUE argent >= prix
+      maxbonbons = maxbonbons + 1
+      argent= argent-prix
+    FIN TANT QUE
+    DEBUT SI maxbonbons >= 1
+      AFFICHER (maxbonbons)
+    SINON
+      AFFICHER ("Tu ne peux rien acheter")
+    FIN SI
+  FIN SI
+FIN nbmaxbonbons

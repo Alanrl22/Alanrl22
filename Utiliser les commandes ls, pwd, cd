@@ -1,0 +1,23 @@
+alan@alan-Swift-SF314-57:~$ ls
+Bureau     examples.desktop  Modèles  Public           Vidéos
+Documents  Images            Musique  Téléchargements
+alan@alan-Swift-SF314-57:~$ ls Téléchargements
+code_1.42.1-1581432938_amd64.deb
+alan@alan-Swift-SF314-57:~$ pwd
+/home/alan
+alan@alan-Swift-SF314-57:~$ cd
+alan@alan-Swift-SF314-57:~$ cd/Images
+bash: cd/Images: Aucun fichier ou dossier de ce type
+alan@alan-Swift-SF314-57:~$ pwd
+/home/alan
+alan@alan-Swift-SF314-57:~$ cd Images
+alan@alan-Swift-SF314-57:~/Images$ pwd
+/home/alan/Images
+alan@alan-Swift-SF314-57:~/Images$ 
+alan@alan-Swift-SF314-57:~/Images$ cd..
+cd.. : commande introuvable
+alan@alan-Swift-SF314-57:~/Images$ pwd
+/home/alan/Images
+alan@alan-Swift-SF314-57:~/Images$ cd ..
+alan@alan-Swift-SF314-57:~$ pwd
+/home/alan

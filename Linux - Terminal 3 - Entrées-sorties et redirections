@@ -69,4 +69,33 @@ alan@alan-Swift-SF314-57:~/Documents$ wc javascript_biarritz_toulouse.csv
   45   47 2147 javascript_biarritz_toulouse.csv
 alan@alan-Swift-SF314-57:~/Documents$ 
 
-history | tail -n 274 > nom du fichier 
+
+	254  grep wilders.csv < PHP | France | 2019
+  255  grep PHP wilders.csv | grep France | grep 2019 > php_france_2019.csv 
+  256  ls
+  257  grep PHP wilders.csv | grep France | grep 2019 > php_france_2019.csv 
+  258  ls
+  259  wc php_france_2019.csv
+  260  grep JavaScript wilders.csv | grep Toulouse | grep Biarritz > javascript_biarritz_toulouse.csv
+  261  wc javascript_biarritz_toulouse.csv
+  262  grep JavaScript wilders.csv | grep Toulouse > javascript_biarritz.csv 
+  263  grep JavaScript wilders.csv | grep Toulouse > javascript_toulouse.csv 
+  264  grep JavaScript wilders.csv | grep Biarritz > javascript_biarritz.csv
+  265  grep JavaScript javascript_biarritz.csv > javascript_toulouse.csv
+  266  cat javascript_biarritz.csv javascript_toulouse.csv | cat > javascript_biarritz_toulouse.csv
+  267  wc -l javascript_biarritz_toulouse.csv 
+  268  grep JavaScript < wilders.csv | grep Toulouse > javascript_toulouse.csv
+  269  cat javascript_toulouse.csv 
+  270  grep JavaScript < wilders.csv | grep Biarritz > javascript_biarritz.csv 
+  271  cat javascript_biarritz.csv 
+  272  cat javascript_biarritz.csv javascript_toulouse.csv | cat > javascript_biarritz_toulouse.csv
+  273  wc javascript_biarritz_toulouse.csv 
+  274  history | tail -n 20 > history.txt
+
+
+
+
+
+
+
+

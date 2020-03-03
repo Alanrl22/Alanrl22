@@ -149,3 +149,32 @@ alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ rm -r dwarf-planets
 alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ ls
 gas-giants  telluric
 alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ 
+
+alan@alan-Swift-SF314-57:~/quetes/shell$ tree
+.
+├── planets
+│   ├── fictional
+│   │   ├── arrakis.jpeg
+│   │   ├── coruscant.jpeg
+│   │   └── cybertron.jpeg
+│   ├── inhabited
+│   │   ├── arrakis.jpeg
+│   │   ├── coruscant.jpeg
+│   │   ├── cybertron.jpeg
+│   │   └── earth.jpeg
+│   └── real
+│       ├── gas-giants
+│       │   ├── jupiter.jpeg
+│       │   ├── neptune.jpeg
+│       │   ├── saturn.jpeg
+│       │   └── uranus.jpeg
+│       └── telluric
+│           ├── earth.jpeg
+│           ├── mars.jpeg
+│           ├── mercury.jpeg
+│           └── venus.jpeg
+└── planets.zip
+
+6 directories, 16 files
+alan@alan-Swift-SF314-57:~/quetes/shell$ 
+

@@ -1,0 +1,151 @@
+alan@alan-Swift-SF314-57:~$ sudo apt-get install -y tree wget unzip
+[sudo] Mot de passe de alan : 
+Désolé, essayez de nouveau.
+[sudo] Mot de passe de alan : 
+Lecture des listes de paquets... Fait
+Construction de l'arbre des dépendances       
+Lecture des informations d'état... Fait
+unzip est déjà la version la plus récente (6.0-21ubuntu1).
+tree est déjà la version la plus récente (1.7.0-5).
+wget est déjà la version la plus récente (1.19.4-1ubuntu2.2).
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 63 non mis à jour.
+alan@alan-Swift-SF314-57:~$ pwd
+/home/alan
+alan@alan-Swift-SF314-57:~$ cd ~/quetes/shell
+bash: cd: /home/alan/quetes/shell: Aucun fichier ou dossier de ce type
+alan@alan-Swift-SF314-57:~$ mkdir -p quetes/shell
+alan@alan-Swift-SF314-57:~$ pwd
+/home/alan
+alan@alan-Swift-SF314-57:~$ ls
+Bureau     examples.desktop  Modèles  Public  Téléchargements
+Documents  Images            Musique  quetes  Vidéos
+alan@alan-Swift-SF314-57:~$ cd quetes
+alan@alan-Swift-SF314-57:~/quetes$ ls
+shell
+alan@alan-Swift-SF314-57:~/quetes$ cd shell
+alan@alan-Swift-SF314-57:~/quetes/shell$ ls
+alan@alan-Swift-SF314-57:~/quetes/shell$ wget https://github.com/bhubr/bhubr.github.io/raw/master/wild/planets.zip
+--2020-03-03 11:51:15--  https://github.com/bhubr/bhubr.github.io/raw/master/wild/planets.zip
+Résolution de github.com (github.com)… 140.82.118.3
+Connexion à github.com (github.com)|140.82.118.3|:443… connecté.
+requête HTTP transmise, en attente de la réponse… 302 Found
+Emplacement : https://raw.githubusercontent.com/bhubr/bhubr.github.io/master/wild/planets.zip [suivant]
+--2020-03-03 11:51:15--  https://raw.githubusercontent.com/bhubr/bhubr.github.io/master/wild/planets.zip
+Résolution de raw.githubusercontent.com (raw.githubusercontent.com)… 151.101.192.133, 151.101.128.133, 151.101.64.133, ...
+Connexion à raw.githubusercontent.com (raw.githubusercontent.com)|151.101.192.133|:443… connecté.
+requête HTTP transmise, en attente de la réponse… 200 OK
+Taille : 300234 (293K) [application/zip]
+Enregistre : «planets.zip»
+
+planets.zip         100%[===================>] 293,20K  --.-KB/s    ds 0,05s   
+
+2020-03-03 11:51:16 (5,24 MB/s) - «planets.zip» enregistré [300234/300234]
+
+alan@alan-Swift-SF314-57:~/quetes/shell$ unzip planets.zip
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg    
+  inflating: planets/earth.jpeg      
+  inflating: planets/pluto.jpeg      
+  inflating: planets/arrakis.jpeg    
+  inflating: planets/jupiter.jpeg    
+  inflating: planets/venus.jpeg      
+  inflating: planets/mars.jpeg       
+  inflating: planets/cybertron.jpeg  
+  inflating: planets/coruscant.jpeg  
+  inflating: planets/uranus.jpeg     
+  inflating: planets/neptune.jpeg    
+  inflating: planets/saturn.jpeg     
+alan@alan-Swift-SF314-57:~/quetes/shell$ ls
+planets  planets.zip
+alan@alan-Swift-SF314-57:~/quetes/shell$ cd planet
+bash: cd: planet: Aucun fichier ou dossier de ce type
+alan@alan-Swift-SF314-57:~/quetes/shell$ cd planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ ls
+arrakis.jpeg    earth.jpeg    mercury.jpeg  saturn.jpeg
+coruscant.jpeg  jupiter.jpeg  neptune.jpeg  uranus.jpeg
+cybertron.jpeg  mars.jpeg     pluto.jpeg    venus.jpeg
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ eog planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ mkdir real fictional inhabited
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ pwd
+/home/alan/quetes/shell/planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ ls
+arrakis.jpeg    earth.jpeg  jupiter.jpeg  neptune.jpeg  saturn.jpeg
+coruscant.jpeg  fictional   mars.jpeg     pluto.jpeg    uranus.jpeg
+cybertron.jpeg  inhabited   mercury.jpeg  real          venus.jpeg
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ cd ~real
+bash: cd: ~real: Aucun fichier ou dossier de ce type
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ cd real 
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ mkdir telluric gas-giants dwarf-planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ pwd
+/home/alan/quetes/shell/planets/real
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ pwd
+/home/alan/quetes/shell/planets/real
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ ls
+dwarf-planets  gas-giants  telluric
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ cd planets
+bash: cd: planets: Aucun fichier ou dossier de ce type
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ cd ..
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ cp pluto.jpeg real/dwarf-planets/
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ mv pluto.jpeg real/dwarf-planets/
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ pwd
+/home/alan/quetes/shell/planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ ls
+arrakis.jpeg    earth.jpeg  jupiter.jpeg  neptune.jpeg  uranus.jpeg
+coruscant.jpeg  fictional   mars.jpeg     real          venus.jpeg
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ mv jupiter.jpeg uranus.jpeg neptune.jpeg real/gas-giants/
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ pwd
+/home/alan/quetes/shell/planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ ls
+arrakis.jpeg    earth.jpeg  mars.jpeg     saturn.jpeg
+coruscant.jpeg  fictional   mercury.jpeg  venus.jpeg
+cybertron.jpeg  inhabited   real
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ mv earth.jpeg mars.jpeg mercury.jpeg venus.jpeg real/telluric/
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ pwd
+/home/alan/quetes/shell/planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ ls
+arrakis.jpeg    cybertron.jpeg  inhabited  saturn.jpeg
+coruscant.jpeg  fictional       real
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ mv saturn.jpeg real/gas-giants/alan@alan-Swift-SF314-57:~/quetes/shell/planets$ pwd
+/home/alan/quetes/shell/planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg  fictional  inhabited  real
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ mv arrakis.jpeg coruscant.jpeg cybertron.jpeg fictionnal/  
+mv: la cible 'fictionnal/' n'est pas un répertoire
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ mv arrakis.jpeg coruscant.jpeg cybertron.jpeg fictional/ 
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ pwd
+/home/alan/quetes/shell/planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ ls
+fictional  inhabited  real
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ cd fictional
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/fictional$ ls
+arrakis.jpeg  coruscant.jpeg  cybertron.jpeg
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/fictional$ cp arrakis.jpeg  coruscant.jpeg  cybertron.jpeg planets/inhabited/
+cp: la cible 'planets/inhabited/' n'est pas un répertoire
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/fictional$ cp arrakis.jpeg  coruscant.jpeg  cybertron.jpeg inhabited/
+cp: la cible 'inhabited/' n'est pas un répertoire
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/fictional$ cd ..
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ cp arrakis.jpeg  coruscant.jpeg  cybertron.jpeg inhabited/
+cp: impossible d'évaluer 'arrakis.jpeg': Aucun fichier ou dossier de ce type
+cp: impossible d'évaluer 'coruscant.jpeg': Aucun fichier ou dossier de ce type
+cp: impossible d'évaluer 'cybertron.jpeg': Aucun fichier ou dossier de ce type
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ pwd
+/home/alan/quetes/shell/planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ cd fictional 
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/fictional$ cp arrakis.jpeg  coruscant.jpeg  cybertron.jpeg inhabited/
+cp: la cible 'inhabited/' n'est pas un répertoire
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/fictional$ arrakis.jpeg  coruscant.jpeg  cybertron.jpeg ../inhabited/
+arrakis.jpeg : commande introuvable
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/fictional$ cp arrakis.jpeg  coruscant.jpeg  cybertron.jpeg ../inhabited/
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/fictional$ cd ../real/telluric/
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real/telluric$ ls
+earth.jpeg  mars.jpeg  mercury.jpeg  venus.jpeg
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real/telluric$ cp earth.jpeg ../../inhabited
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real/telluric$ cd ../..
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ rm -r dwarf-planets
+rm: impossible de supprimer 'dwarf-planets': Aucun fichier ou dossier de ce type
+alan@alan-Swift-SF314-57:~/quetes/shell/planets$ cd real
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ rm -r dwarf-planets
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ ls
+gas-giants  telluric
+alan@alan-Swift-SF314-57:~/quetes/shell/planets/real$ 
